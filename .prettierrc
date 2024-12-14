@@ -1,0 +1,11 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "printWidth": 140,
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": { "parser": "html" }
+    }
+  ]
+}

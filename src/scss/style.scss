@@ -1,0 +1,85 @@
+@import "./nav";
+@import "./btn";
+@import "./home";
+@import "./about";
+@import "./skill";
+@import "./contact";
+@import "./footer";
+
+:root {
+  --body-color: rgb(250, 250, 250);
+  --logo-color: rgb(58, 169, 180);
+
+  --white-color: rgb(255, 255, 255);
+  --text-color: rgb(68, 68, 68);
+
+  --first-color: rgb(110, 87, 224);
+  --first-color-hover: rgb(40, 91, 212);
+  --first-shadow-color: rgba(0, 0, 0, 0.1);
+
+  --second-color: rgb(0, 201, 255);
+  --second-color-hover: rgb(0, 181, 231);
+  --third-color: rgb(192, 166, 49);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--body-color);
+
+  .container {
+    width: 100;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding-inline: 10vw;
+
+  .home-box {
+    display: flex;
+    padding-block: 6em;
+    height: 100vh;
+    min-height: 700px;
+  }
+
+  .section {
+    padding-block: 6em;
+
+    .top-header {
+      text-align: center;
+      margin-bottom: 5em;
+
+      h1 {
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      span {
+        color: #999;
+      }
+    }
+  }
+}
+
+i {
+  font-style: 16px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
