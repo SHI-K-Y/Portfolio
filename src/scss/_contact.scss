@@ -46,9 +46,15 @@
     textarea {
       background: transparent;
       border: 2px solid #aaa;
-      border-radius: 10px;
+      border-radius: 12px;
       padding: 15px 20px;
       outline: none;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: var(--second-color);
+      box-shadow: 0 2px 5px var(--first-shadow-color);
     }
 
     input {
