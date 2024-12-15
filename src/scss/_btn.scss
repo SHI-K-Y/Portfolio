@@ -10,6 +10,7 @@
   &:hover {
     background-color: var(--second-color);
     color: var(--white-color);
+    transform: scale(1.01);
   }
 
   > i {
