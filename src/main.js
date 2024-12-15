@@ -1,3 +1,36 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const homeInstagramIcon = document.querySelector("#home #instagram-icon");
+  const homeInstagramIconFooter = document.querySelector("footer #instagram-icon");
+  const homeFacebookIcon = document.querySelector("#home #facebook-icon");
+  const homeFacebookIconFooter = document.querySelector("footer #facebook-icon");
+  const homeGithubIcon = document.querySelector("#home #github-icon");
+  const homeGithubIconFooter = document.querySelector("footer #github-icon");
+
+  [homeInstagramIcon, homeInstagramIconFooter].forEach((icon) => {
+    if (icon) {
+      icon.addEventListener("click", function () {
+        window.open("https://www.instagram.com/k.y.shi_/", "_blank");
+      });
+    }
+  });
+
+  [homeFacebookIcon, homeFacebookIconFooter].forEach((icon) => {
+    if (icon) {
+      icon.addEventListener("click", function () {
+        window.open("https://www.facebook.com/share/1AjpnxWFTF/?mibextid=wwXIfr", "_blank");
+      });
+    }
+  });
+
+  [homeGithubIcon, homeGithubIconFooter].forEach((icon) => {
+    if (icon) {
+      icon.addEventListener("click", function () {
+        window.open("https://github.com/SHI-K-Y", "_blank");
+      });
+    }
+  });
+});
+
 window.onscroll = function () {
   headerShadow();
   triggerProgressBarAnimation();

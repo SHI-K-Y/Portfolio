@@ -74,6 +74,7 @@ i {
 }
 
 .icon {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,4 +83,10 @@ i {
   border-radius: 50%;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: var(--first-color);
 }
