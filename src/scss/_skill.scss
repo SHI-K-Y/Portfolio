@@ -19,11 +19,18 @@
     .progress-bar-wrap {
       height: 10px;
       border: 1px solid #ccc;
+      overflow: hidden;
 
       .progress-bar {
         height: 10px;
         background-color: var(--first-color);
+        width: 0;
+        transition: width 2s ease-out;
       }
+    }
+
+    .active .progress-bar {
+      width: var(--progress-width);
     }
   }
 }

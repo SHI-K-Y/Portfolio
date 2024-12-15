@@ -1,5 +1,6 @@
 window.onscroll = function () {
   headerShadow();
+  triggerProgressBarAnimation();
 };
 
 function headerShadow() {
@@ -13,6 +14,21 @@ function headerShadow() {
     navHeader.style.boxShadow = "none";
     navHeader.style.height = "90px";
     navHeader.style.lineHeight = "90px";
+  }
+}
+
+function triggerProgressBarAnimation() {
+  const skillSection = document.querySelector("#skill");
+  const progressBars = document.querySelectorAll(".progress-bar-wrap");
+
+  const skillSectionTop = skillSection.getBoundingClientRect().top;
+  const viewportHeight = window.innerHeight;
+
+  if (skillSectionTop < viewportHeight - 100) {
+    progressBars.forEach((bar) => {
+      bar.classList.add("active");
+    });
+    window.removeEventListener("scroll", triggerProgressBarAnimation);
   }
 }
 
@@ -35,3 +51,4 @@ function scrollActive() {
 }
 
 window.addEventListener("scroll", scrollActive);
+window.addEventListener("scroll", triggerProgressBarAnimation);
