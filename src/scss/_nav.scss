@@ -8,6 +8,9 @@ nav {
   display: flex;
   justify-content: space-between;
   z-index: 1000;
+  transition: transform 0.3s ease;
+
+  transform: translateY(0);
 
   .nav-logo {
     font-size: 24px;
@@ -25,6 +28,7 @@ nav {
       font-weight: 500;
       padding-inline: 15px;
       margin-inline: 20px;
+      position: relative;
     }
 
     .active-link {
@@ -38,7 +42,7 @@ nav {
         height: 5px;
         background-color: var(--first-color);
         left: 50%;
-        bottom: -15px;
+        bottom: -10px;
         border-radius: 50%;
       }
     }

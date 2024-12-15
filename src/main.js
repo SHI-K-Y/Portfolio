@@ -35,14 +35,15 @@ function triggerProgressBarAnimation() {
 const sections = document.querySelectorAll("section[id]");
 
 function scrollActive() {
+  const sections = document.querySelectorAll("section[id]");
   const scrollY = window.scrollY;
 
   sections.forEach((current) => {
-    const sectionHeight = current.offsetHeight,
-      sectionTop = current.offsetTop - 50,
-      sectionId = current.getAttribute("id");
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 100;
+    const sectionId = current.getAttribute("id");
 
-    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight - 100) {
       document.querySelector(".nav-menu a[href*=" + sectionId + "]").classList.add("active-link");
     } else {
       document.querySelector(".nav-menu a[href*=" + sectionId + "]").classList.remove("active-link");
@@ -50,5 +51,31 @@ function scrollActive() {
   });
 }
 
+document.querySelectorAll(".nav-link").forEach((link) => {
+  link.addEventListener("click", (e) => {
+    document.querySelectorAll(".nav-link").forEach((nav) => nav.classList.remove("active-link"));
+
+    e.target.classList.add("active-link");
+
+    scrollActive();
+  });
+});
+
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  const navHeader = document.getElementById("header");
+
+  if (window.scrollY > lastScrollY) {
+    navHeader.style.transform = "translateY(-100%)";
+  } else {
+    navHeader.style.transform = "translateY(0)";
+  }
+
+  lastScrollY = window.scrollY;
+});
+
 window.addEventListener("scroll", scrollActive);
 window.addEventListener("scroll", triggerProgressBarAnimation);
+document.addEventListener("DOMContentLoaded", scrollActive);
+document.addEventListener("load", scrollActive, true);
