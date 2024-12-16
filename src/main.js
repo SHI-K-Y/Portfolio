@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
   [homeFacebookIcon, homeFacebookIconFooter].forEach((icon) => {
     if (icon) {
       icon.addEventListener("click", function () {
-        window.open("https://www.facebook.com/share/1AjpnxWFTF/?mibextid=wwXIfr", "_blank");
+        window.open("https://www.facebook.com/kunyan.shi/", "_blank");
       });
     }
   });
