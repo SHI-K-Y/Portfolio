@@ -108,6 +108,22 @@ window.addEventListener("scroll", () => {
   lastScrollY = window.scrollY;
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const navHeader = document.getElementById("header");
+
+  if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
+    navHeader.classList.add("transparent");
+  }
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 50) {
+      navHeader.classList.remove("transparent");
+    } else {
+      navHeader.classList.add("transparent");
+    }
+  });
+});
+
 window.addEventListener("scroll", scrollActive);
 window.addEventListener("scroll", triggerProgressBarAnimation);
 document.addEventListener("DOMContentLoaded", scrollActive);

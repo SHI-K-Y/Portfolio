@@ -8,9 +8,14 @@ nav {
   display: flex;
   justify-content: space-between;
   z-index: 1000;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease, background-color 1s ease;
 
   transform: translateY(0);
+
+  &.transparent {
+    background-color: transparent;
+    box-shadow: none;
+  }
 
   .nav-logo {
     font-size: 24px;
