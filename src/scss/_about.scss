@@ -9,7 +9,7 @@
     width: 50%;
   }
 
-  h3 {
+  h2 {
     margin-bottom: 10px;
     font-style: 20px;
     font-weight: 600;
@@ -21,7 +21,7 @@
     flex-direction: column;
     padding: 30px 20px 70px;
     width: 100%;
-    background-color: var(--white-color);
+    background-color: var(--first-color);
     border-radius: 20px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
 
@@ -38,7 +38,7 @@
     padding: 30px 20px 70px;
     width: 100%;
 
-    h3 {
+    h2 {
       text-align: center;
     }
 

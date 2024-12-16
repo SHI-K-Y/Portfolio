@@ -3,6 +3,7 @@
   width: 100%;
   gap: 20px;
   flex-wrap: wrap;
+  color: var(--text-color);
 
   .skill-item {
     flex-basis: calc(50% - 20px);
