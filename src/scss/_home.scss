@@ -81,3 +81,18 @@
     }
   }
 }
+
+.home-box {
+  display: flex;
+  padding-block: 6em;
+  height: 100vh;
+  min-height: 700px;
+
+  background-image: url("./assets/image/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
