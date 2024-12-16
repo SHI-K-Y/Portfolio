@@ -1,9 +1,9 @@
 nav {
-  background-color: var(--body-color);
+  background-color: var(--second-color);
   position: fixed;
   width: 100%;
-  height: 90px;
-  line-height: 90px;
+  height: 60px;
+  line-height: 60px;
   padding-inline: 9vw;
   display: flex;
   justify-content: space-between;
@@ -33,14 +33,14 @@ nav {
 
     .active-link {
       position: relative;
-      color: var(--first-color);
+      color: var(--logo-color);
 
       &::after {
         position: absolute;
         content: "";
         width: 5px;
         height: 5px;
-        background-color: var(--first-color);
+        background-color: var(--logo-color);
         left: 50%;
         bottom: -10px;
         border-radius: 50%;
