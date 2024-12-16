@@ -5,11 +5,11 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  transition: 0.4s;
+  transition: 0.3s;
 
   &:hover {
-    background-color: var(--second-color);
-    color: var(--white-color);
+    background-color: var(--logo-color);
+    color: var(--second-color);
     transform: scale(1.01);
   }
 
