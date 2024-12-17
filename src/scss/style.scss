@@ -7,21 +7,21 @@
 @import "./footer";
 
 :root {
-  --body-color: #1b3247;
+  --body-color: rgba(27,50,71,1);
   --logo-color: rgba(216, 206, 181, 1);
 
   --white-color: rgb(255, 255, 255, 1);
-  --text-color: #e9eaec;
+  --text-color: rgba(233,234,236,1);
 
-  --first-color: #90adc6;
-  --first-color-hover: #9c2a27;
+  --first-color: rgba(144,173,198,1);
+  --first-color-hover: rgba(156,42,39,1);
   --first-shadow-color: rgba(0, 0, 0, 0.8);
 
   --second-color: rgba(71, 117, 124, 1);
   --second-color-hover: rgb(30, 136, 229, 1);
   --second-shadow-color: rgba(0, 0, 0, 0.5);
 
-  --third-color: #b2612d;
+  --third-color: rgba(178,97,45,1);
 }
 
 h1 {
