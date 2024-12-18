@@ -7,25 +7,25 @@
 @import "./footer";
 
 :root {
-  --body-color: rgba(27,50,71,1);
+  --body-color: rgba(27, 50, 71, 1);
   --logo-color: rgba(216, 206, 181, 1);
 
   --white-color: rgb(255, 255, 255, 1);
-  --text-color: rgba(233,234,236,1);
+  --text-color: rgba(233, 234, 236, 1);
 
-  --first-color: rgba(144,173,198,1);
-  --first-color-hover: rgba(156,42,39,1);
+  --first-color: rgba(144, 173, 198, 1);
+  --first-color-hover: rgba(156, 42, 39, 1);
   --first-shadow-color: rgba(0, 0, 0, 0.8);
 
   --second-color: rgba(71, 117, 124, 1);
   --second-color-hover: rgb(30, 136, 229, 1);
   --second-shadow-color: rgba(0, 0, 0, 0.5);
 
-  --third-color: rgba(178,97,45,1);
+  --third-color: rgba(178, 97, 45, 1);
 }
 
 h1 {
-  color: #e9eaec;
+  color: var(--logo-color);
 }
 
 html {
