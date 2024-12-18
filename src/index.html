@@ -147,10 +147,14 @@
               </div>
             </div>
             <div class="form">
-              <input type="text" placeholder="姓名" />
-              <input type="email" placeholder="信箱" />
-              <textarea placeholder="訊息"></textarea>
-              <button type="button" class="btn">Send <i class="fa-regular fa-message"></i></button>
+              <form action="https://formspree.io/f/您的唯一端點ID" method="POST">
+                <input type="text" name="name" placeholder="姓名" required />
+                <input type="email" name="_replyto" placeholder="信箱" required />
+                <textarea name="message" placeholder="訊息" required></textarea>
+                <input type="hidden" name="_subject" value="來自個人網站的新訊息" />
+                <input type="hidden" name="_next" value="https://您的網站網址/thank-you.html" />
+                <button type="submit" class="btn">Send <i class="fa-regular fa-message"></i></button>
+              </form>
             </div>
           </div>
         </section>

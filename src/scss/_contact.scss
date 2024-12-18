@@ -42,6 +42,10 @@
     grid-template-rows: 55px 250px 1fr;
     gap: 10px;
 
+    form {
+      display: contents;
+    }
+
     input,
     textarea {
       background: transparent;

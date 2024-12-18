@@ -157,6 +157,56 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector(".contact-container .form");
+  const nameInput = form.querySelector('input[placeholder="姓名"]');
+  const emailInput = form.querySelector('input[placeholder="信箱"]');
+  const messageInput = form.querySelector('textarea[placeholder="訊息"]');
+  const sendButton = form.querySelector(".btn");
+
+  function validateEmail(email) {
+    const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return re.test(String(email).toLowerCase());
+  }
+
+  function validateForm() {
+    let isValid = true;
+
+    if (nameInput.value.trim() === "") {
+      nameInput.style.borderColor = "red";
+      isValid = false;
+    } else {
+      nameInput.style.borderColor = "var(--logo-color)";
+    }
+
+    if (!validateEmail(emailInput.value)) {
+      emailInput.style.borderColor = "red";
+      isValid = false;
+    } else {
+      emailInput.style.borderColor = "var(--logo-color)";
+    }
+
+    if (messageInput.value.trim() === "") {
+      messageInput.style.borderColor = "red";
+      isValid = false;
+    } else {
+      messageInput.style.borderColor = "var(--logo-color)";
+    }
+
+    return isValid;
+  }
+
+  sendButton.addEventListener("click", function (e) {
+    if (validateForm()) {
+      alert("表單驗證成功！");
+    }
+  });
+
+  [nameInput, emailInput, messageInput].forEach((input) => {
+    input.addEventListener("input", validateForm);
+  });
+});
+
 window.addEventListener("scroll", scrollActive);
 window.addEventListener("scroll", triggerProgressBarAnimation);
 document.addEventListener("DOMContentLoaded", scrollActive);
