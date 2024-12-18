@@ -134,6 +134,29 @@ document.querySelectorAll(".contact-container").forEach((link) => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const contactInfo = document.querySelector(".contact-info");
+
+  const formElements = document.querySelectorAll("input, textarea, button");
+
+  contactInfo.addEventListener("click", function (event) {
+    event.stopPropagation();
+    contactInfo.classList.add("active");
+  });
+
+  document.addEventListener("click", function (event) {
+    if (!contactInfo.contains(event.target)) {
+      contactInfo.classList.remove("active");
+    }
+  });
+
+  formElements.forEach((element) => {
+    element.addEventListener("click", function (event) {
+      event.stopPropagation();
+    });
+  });
+});
+
 window.addEventListener("scroll", scrollActive);
 window.addEventListener("scroll", triggerProgressBarAnimation);
 document.addEventListener("DOMContentLoaded", scrollActive);
