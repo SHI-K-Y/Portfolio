@@ -11,7 +11,7 @@
 
   h2 {
     margin-bottom: 10px;
-    font-style: 20px;
+    font-style: 21px;
     font-weight: 600;
     color: var(--text-color);
   }
@@ -26,8 +26,9 @@
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
 
     div {
-      text-align: center;
-      font-style: 17px;
+      text-align: left;
+      font-size: 16px;
+      line-height: 1.8;
       color: var(--text-color);
     }
   }
@@ -44,22 +45,27 @@
 
     .item {
       font-size: 17px;
-      padding: 5px;
+      padding: 10px;
       color: var(--text-color);
       position: relative;
       display: flex;
-      justify-content: space-between;
+      justify-content: left;
+
+      .color {
+        color: var(--text-color);
+      }
 
       &::before {
+        padding: 8px;
         box-sizing: border-box;
         content: "";
         position: absolute;
-        top: 9px;
+        top: 15px;
         left: -16px;
         width: 15px;
         height: 15px;
         border-radius: 50px;
-        background-color: var(--logo-color);
+        background-color: var(--second-color);
         box-shadow: 1px 1px 1px 1.5px var(--first-shadow-color);
       }
     }
