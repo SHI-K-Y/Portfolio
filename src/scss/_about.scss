@@ -59,7 +59,8 @@
         width: 15px;
         height: 15px;
         border-radius: 50px;
-        background-color: var(--first-color);
+        background-color: var(--logo-color);
+        box-shadow: 1px 1px 1px 1.5px var(--first-shadow-color);
       }
     }
   }
