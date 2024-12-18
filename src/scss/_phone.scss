@@ -41,6 +41,11 @@
           display: block;
           padding: 10px;
           color: var(--black-color);
+
+          &:active {
+            color: var(--logo-color);
+            opacity: 0.7;
+          }
         }
       }
 
@@ -161,6 +166,11 @@
 
   .contact-container {
     flex-direction: column;
+
+    &:active {
+      color: var(--logo-color);
+      opacity: 0.7;
+    }
 
     .form {
       grid-template-columns: 1fr;
