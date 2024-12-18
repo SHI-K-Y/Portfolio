@@ -19,7 +19,7 @@ footer {
 
       a {
         text-decoration: none;
-        color: var(--text-color);
+        color: var(--logo-color);
         font-weight: 500;
         margin-inline: 20px;
       }
@@ -34,5 +34,6 @@ footer {
   .bottom-footer {
     font-size: 14px;
     margin-top: 10px;
+    color: var(--logo-color);
   }
 }
