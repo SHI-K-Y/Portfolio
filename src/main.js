@@ -124,6 +124,24 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const navMenuBtn = document.querySelector(".nav-menu-btn");
+  const navMenu = document.querySelector(".nav-menu");
+
+  navMenuBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("responsive");
+    navMenuBtn.classList.toggle("active");
+  });
+
+  const navLinks = document.querySelectorAll(".nav-link");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("responsive");
+      navMenuBtn.classList.remove("active");
+    });
+  });
+});
+
 window.addEventListener("scroll", scrollActive);
 window.addEventListener("scroll", triggerProgressBarAnimation);
 document.addEventListener("DOMContentLoaded", scrollActive);
