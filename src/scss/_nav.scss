@@ -23,6 +23,10 @@ nav {
     color: var(--logo-color);
   }
 
+  .nav-menu-btn {
+    display: none;
+  }
+
   ul {
     display: flex;
     list-style: none;
