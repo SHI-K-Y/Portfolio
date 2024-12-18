@@ -7,8 +7,8 @@
   justify-content: center;
 
   .tag > span {
-    background-color: var(--third-color);
-    color: var(--white-color);
+    background-color: var(--logo-color);
+    color: var(--black-color);
     padding: 3px 6px;
     font-size: 12px;
     border-radius: 5px;
@@ -31,11 +31,12 @@
     gap: 20px;
 
     > .blue-btn {
-      background-color: var(--first-color);
+      background-color: var(--second-color);
       color: var(--white-color);
 
       &:hover {
-        background-color: var(--second-color);
+        background-color: var(--logo-color);
+        color: var(--second-color);
       }
     }
   }
