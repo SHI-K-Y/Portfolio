@@ -1,4 +1,25 @@
 .btn {
+  display: none;
+  font-weight: 500;
+  padding: 12px 20px;
+  background-color: #efefef;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: var(--logo-color);
+    color: var(--second-color);
+    transform: scale(1.01);
+  }
+
+  > i {
+    margin-left: 10px;
+  }
+}
+
+.btn-send {
   font-weight: 500;
   padding: 12px 20px;
   background-color: #efefef;
