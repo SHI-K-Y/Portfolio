@@ -31,24 +31,42 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-window.onscroll = function () {
-  headerShadow();
-  triggerProgressBarAnimation();
-};
+let lastScrollY = window.scrollY;
+const navHeader = document.getElementById("header");
 
-function headerShadow() {
-  const navHeader = document.getElementById("header");
+window.addEventListener("scroll", () => {
+  const currentScrollY = window.scrollY;
 
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    navHeader.style.boxShadow = "0 1px 6px rgba(0, 0, 0, 0.1)";
-    navHeader.style.height = "70px";
-    navHeader.style.lineHeight = "70px";
-  } else {
-    navHeader.style.boxShadow = "none";
-    navHeader.style.height = "90px";
-    navHeader.style.lineHeight = "90px";
+  if (currentScrollY > 50) {
+    if (currentScrollY > lastScrollY) {
+      navHeader.style.transform = "translateY(-100%)";
+    } else {
+      navHeader.style.transform = "translateY(0)";
+    }
   }
-}
+
+  lastScrollY = currentScrollY;
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
+    navHeader.classList.add("transparent");
+  }
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 50) {
+      navHeader.classList.remove("transparent");
+      navHeader.style.boxShadow = "0 1px 6px rgba(0, 0, 0, 0.1)";
+      navHeader.style.height = "70px";
+      navHeader.style.lineHeight = "70px";
+    } else {
+      navHeader.classList.add("transparent");
+      navHeader.style.boxShadow = "none";
+      navHeader.style.height = "90px";
+      navHeader.style.lineHeight = "90px";
+    }
+  });
+});
 
 function triggerProgressBarAnimation() {
   const skillSection = document.querySelector("#skill");
@@ -64,8 +82,6 @@ function triggerProgressBarAnimation() {
     window.removeEventListener("scroll", triggerProgressBarAnimation);
   }
 }
-
-const sections = document.querySelectorAll("section[id]");
 
 function scrollActive() {
   const sections = document.querySelectorAll("section[id]");
@@ -83,46 +99,6 @@ function scrollActive() {
     }
   });
 }
-
-document.querySelectorAll(".nav-link").forEach((link) => {
-  link.addEventListener("click", (e) => {
-    document.querySelectorAll(".nav-link").forEach((nav) => nav.classList.remove("active-link"));
-
-    e.target.classList.add("active-link");
-
-    scrollActive();
-  });
-});
-
-let lastScrollY = window.scrollY;
-
-window.addEventListener("scroll", () => {
-  const navHeader = document.getElementById("header");
-
-  if (window.scrollY > lastScrollY) {
-    navHeader.style.transform = "translateY(-100%)";
-  } else {
-    navHeader.style.transform = "translateY(0)";
-  }
-
-  lastScrollY = window.scrollY;
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const navHeader = document.getElementById("header");
-
-  if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
-    navHeader.classList.add("transparent");
-  }
-
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 50) {
-      navHeader.classList.remove("transparent");
-    } else {
-      navHeader.classList.add("transparent");
-    }
-  });
-});
 
 document.addEventListener("DOMContentLoaded", () => {
   const navMenuBtn = document.querySelector(".nav-menu-btn");
