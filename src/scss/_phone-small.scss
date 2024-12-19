@@ -219,7 +219,7 @@
   }
 
   .wrapper {
-    padding-inline: 5vw;
+    padding-inline: 15px;
 
     .section {
       padding-block: 2em;
@@ -235,6 +235,10 @@
           font-size: 14px;
         }
       }
+    }
+
+    > * {
+      margin-bottom: 20px;
     }
   }
 }
