@@ -28,10 +28,10 @@
         width: 0;
         transition: width 2s ease-out;
       }
-    }
 
-    .active .progress-bar {
-      width: var(--progress-width);
+      &.active .progress-bar {
+        width: var(--progress-width, 100%);
+      }
     }
   }
 }

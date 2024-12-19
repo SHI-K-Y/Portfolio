@@ -74,9 +74,37 @@ document.addEventListener("DOMContentLoaded", function () {
     const skillSectionTop = skillSection.getBoundingClientRect().top;
     const viewportHeight = window.innerHeight;
 
+    const progressBarObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const progressBarWrap = entry.target;
+          if (entry.isIntersecting) {
+            progressBarWrap.classList.remove("active");
+
+            progressBarWrap.offsetWidth;
+
+            progressBarWrap.classList.add("active");
+
+            const progressValue = progressBarWrap.getAttribute("data-progress") || "100";
+            progressBarWrap.style.setProperty("--progress-width", `${progressValue}%`);
+          } else {
+            progressBarWrap.classList.remove("active");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    progressBars.forEach((bar) => progressBarObserver.observe(bar));
+
+    progressBars.forEach((bar) => progressBarObserver.observe(bar));
+
     if (skillSectionTop < viewportHeight - 100) {
-      progressBars.forEach((bar) => bar.classList.add("active"));
-      window.removeEventListener("scroll", triggerProgressBarAnimation);
+      progressBars.forEach((bar) => {
+        bar.classList.remove("active"); // Reset the animation state
+        bar.offsetWidth; // Trigger a reflow, flushing the CSS changes
+        bar.classList.add("active");
+      });
     }
   }
 
