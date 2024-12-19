@@ -27,17 +27,19 @@
       justify-content: center;
       align-items: center;
       background: var(--body-color);
-      backdrop-filter: blur(20px);
+      backdrop-filter: blur(10px);
+      will-change: backdrop-filter;
       width: 100%;
       min-height: 450px;
       height: 90vh;
-      transition: 0.3s ease;
+      transition: left 0.3s ease-in-out, backdrop-filter 0.3s ease;
 
       .nav-item {
         margin: 10px 0;
         text-align: center;
 
         .nav-link {
+          padding: 15px 20px;
           display: block;
           padding: 10px;
           color: var(--logo-color);
@@ -61,7 +63,7 @@
   .home-box {
     background-image: url("./assets/image/background2.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
@@ -70,7 +72,7 @@
     height: auto;
     padding-inline: 5vw;
     min-height: 100vh;
-    margin-bottom: 10px;
+    margin-bottom: 0;
 
     .home-text {
       padding-top: 0;
@@ -78,7 +80,8 @@
       order: 2;
       justify-content: center;
       align-content: flex-start;
-      min-height: 60vh;
+      min-height: auto;
+      padding: 20px 0;
 
       .tag {
         display: flex;
@@ -101,6 +104,8 @@
       }
 
       .subtitle {
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 18px;
         text-align: center;
         margin-bottom: 20px;
       }
@@ -125,8 +130,8 @@
       order: 1;
       justify-content: center;
       width: 100%;
-      margin-bottom: -30px;
-      margin-top: 200px;
+      margin-bottom: 0;
+      margin-top: 100px;
 
       .image {
         width: 280px;
