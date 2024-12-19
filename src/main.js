@@ -67,48 +67,40 @@ document.addEventListener("DOMContentLoaded", function () {
     navHeader.classList.add("transparent");
   }
 
-  const skillSection = document.querySelector("#skill");
   const progressBars = document.querySelectorAll(".progress-bar-wrap");
 
-  function triggerProgressBarAnimation() {
-    const skillSectionTop = skillSection.getBoundingClientRect().top;
-    const viewportHeight = window.innerHeight;
+  function updateProgressBars() {
+    progressBars.forEach((bar) => {
+      const progressValue = bar.getAttribute("data-progress") || "100";
+      const barElement = bar.querySelector(".progress-bar");
 
-    const progressBarObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const progressBarWrap = entry.target;
-          if (entry.isIntersecting) {
-            progressBarWrap.classList.remove("active");
+      barElement.style.transition = "none";
+      barElement.style.width = "0";
 
-            progressBarWrap.offsetWidth;
-
-            progressBarWrap.classList.add("active");
-
-            const progressValue = progressBarWrap.getAttribute("data-progress") || "100";
-            progressBarWrap.style.setProperty("--progress-width", `${progressValue}%`);
-          } else {
-            progressBarWrap.classList.remove("active");
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-
-    progressBars.forEach((bar) => progressBarObserver.observe(bar));
-
-    progressBars.forEach((bar) => progressBarObserver.observe(bar));
-
-    if (skillSectionTop < viewportHeight - 100) {
-      progressBars.forEach((bar) => {
-        bar.classList.remove("active"); // Reset the animation state
-        bar.offsetWidth; // Trigger a reflow, flushing the CSS changes
-        bar.classList.add("active");
+      requestAnimationFrame(() => {
+        barElement.style.transition = "width 1s linear";
+        barElement.style.width = `${progressValue}%`;
       });
-    }
+    });
   }
 
-  window.addEventListener("scroll", triggerProgressBarAnimation);
+  const progressObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (!entry.target.classList.contains("animated")) {
+            entry.target.classList.add("animated");
+            updateProgressBars();
+          }
+        } else {
+          entry.target.classList.remove("animated");
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  progressBars.forEach((bar) => progressObserver.observe(bar));
 
   function scrollActive() {
     const sections = document.querySelectorAll("section[id]");
