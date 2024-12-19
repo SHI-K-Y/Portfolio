@@ -7,7 +7,7 @@
 @import "./footer";
 @import "./phone-small";
 @import "./phone-medium";
-@import "./tablet";
+//@import "./tablet";
 
 :root {
   --body-color: rgba(27, 50, 71, 1);
@@ -101,4 +101,17 @@ i {
 .icon:hover {
   transform: scale(1.2);
   color: var(--logo-color);
+}
+
+.animated-section {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animated-section.animate {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
