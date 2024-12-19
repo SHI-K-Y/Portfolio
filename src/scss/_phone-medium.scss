@@ -1,4 +1,4 @@
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 577px) and (max-width: 767px) {
   nav {
     .nav-button {
       display: none;
@@ -118,7 +118,7 @@
 
     .icons {
       justify-content: center;
-      margin-top: 30px;
+      margin-top: 5px;
     }
 
     .home-image {
