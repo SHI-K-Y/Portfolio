@@ -207,6 +207,15 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll("img");
+  images.forEach((img) => {
+    img.addEventListener("contextmenu", function (e) {
+      e.preventDefault();
+    });
+  });
+});
+
 window.addEventListener("scroll", scrollActive);
 window.addEventListener("scroll", triggerProgressBarAnimation);
 document.addEventListener("DOMContentLoaded", scrollActive);
