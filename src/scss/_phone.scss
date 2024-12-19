@@ -26,7 +26,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: var(--logo-color);
+      background: var(--body-color);
       backdrop-filter: blur(20px);
       width: 100%;
       min-height: 450px;
@@ -40,7 +40,7 @@
         .nav-link {
           display: block;
           padding: 10px;
-          color: var(--black-color);
+          color: var(--logo-color);
 
           &:active {
             color: var(--logo-color);
