@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Initialize AOS
   AOS.init({
     duration: 800,
     once: false,
@@ -7,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
     easing: "ease-in-out",
   });
 
-  // Social media icon click handlers
   const icons = [
     { id: "instagram-icon", url: "https://www.instagram.com/k.y.shi_/" },
     { id: "facebook-icon", url: "https://www.facebook.com/kunyan.shi/" },
@@ -22,11 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Automatic animation class assignment
   const elements = document.querySelectorAll("section, .content, .animate-target");
   elements.forEach((el) => el.classList.add("animated-section"));
 
-  // Intersection Observer for scroll animations
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -40,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   elements.forEach((el) => observer.observe(el));
 
-  // Navbar scroll effect
   let lastScrollY = window.scrollY;
   const navHeader = document.getElementById("header");
 
@@ -72,7 +67,6 @@ document.addEventListener("DOMContentLoaded", function () {
     navHeader.classList.add("transparent");
   }
 
-  // Trigger progress bar animation
   const skillSection = document.querySelector("#skill");
   const progressBars = document.querySelectorAll(".progress-bar-wrap");
 
@@ -88,7 +82,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("scroll", triggerProgressBarAnimation);
 
-  // Scroll active link highlight
   function scrollActive() {
     const sections = document.querySelectorAll("section[id]");
     const scrollY = window.scrollY;
@@ -111,7 +104,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("scroll", scrollActive);
 
-  // Navigation menu toggle
   const navMenuBtn = document.querySelector(".nav-menu-btn");
   const navMenu = document.querySelector(".nav-menu");
 
@@ -128,7 +120,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Contact form validation
   const form = document.querySelector(".contact-container .form");
   const nameInput = form.querySelector('input[placeholder="姓名"]');
   const emailInput = form.querySelector('input[placeholder="信箱"]');
@@ -177,7 +168,6 @@ document.addEventListener("DOMContentLoaded", function () {
     input.addEventListener("input", validateForm);
   });
 
-  // Prevent right-click on images
   document.querySelectorAll("img").forEach((img) => {
     img.addEventListener("contextmenu", (e) => e.preventDefault());
   });
