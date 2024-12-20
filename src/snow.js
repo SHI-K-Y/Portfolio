@@ -2,8 +2,6 @@
 const snowConfig = {
   // 設定要顯示雪花效果的月份（11-1）
   winterMonths: [11, 12, 1],
-  // 設定要顯示雪花效果的特定日期（格式：MM/DD，例如："12/25"）
-  specialDates: ["12/25", "01/01"],
   // 雪花的數量
   snowflakeCount: 15,
   // 雪花字符
@@ -28,20 +26,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // 判斷是否為冬季或特殊日期
+  // 判斷是否為冬季
   function shouldShowSnow() {
     const today = new Date();
     const currentMonth = today.getMonth() + 1; // getMonth() 返回 0-11
-    const currentDate = `${String(currentMonth).padStart(2, "0")}/${String(today.getDate()).padStart(2, "0")}`;
 
     // 檢查是否在冬季月份
-    const isWinterMonth = snowConfig.winterMonths.includes(currentMonth);
-
-    // 檢查是否為特殊日期
-    const isSpecialDate = snowConfig.specialDates.includes(currentDate);
-
-    // 返回結果
-    return isWinterMonth || isSpecialDate;
+    return snowConfig.winterMonths.includes(currentMonth);
   }
 
   // 初始化雪花效果
