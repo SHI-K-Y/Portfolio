@@ -152,9 +152,14 @@
 
     .list {
       .item {
-        display: flex;
         flex-direction: column;
         justify-content: center;
+        left: 0px;
+
+        .color {
+          justify-content: center;
+          text-align: center;
+        }
 
         &::before {
           top: 18px;

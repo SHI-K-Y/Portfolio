@@ -56,7 +56,8 @@
       padding: 10px;
       position: relative;
       display: flex;
-      justify-content: center;
+      justify-content: left;
+      left: 110px;
 
       .color {
         color: var(--text-color);
@@ -68,7 +69,7 @@
         content: "";
         position: absolute;
         top: 15px;
-        left: 50px;
+        left: -20px;
         width: 15px;
         height: 15px;
         border-radius: 50px;
