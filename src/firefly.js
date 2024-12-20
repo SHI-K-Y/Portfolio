@@ -1,9 +1,9 @@
 // 螢火蟲效果的設定選項
 const fireflyConfig = {
-  // 設定要顯示螢火蟲效果的月份（6-8）
+  // 設定要顯示螢火蟲效果的月份（5-8）
   summerMonths: [5, 6, 7, 8],
   // 螢火蟲的數量
-  fireflyCount: 8,
+  fireflyCount: 10,
 };
 
 document.addEventListener("DOMContentLoaded", function () {
