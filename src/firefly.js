@@ -1,18 +1,13 @@
-// 螢火蟲效果的設定選項
 const fireflyConfig = {
-  // 設定要顯示螢火蟲效果的月份（5-8）
   summerMonths: [5, 6, 7, 8],
-  // 螢火蟲的數量
   fireflyCount: 10,
 };
 
 document.addEventListener("DOMContentLoaded", function () {
-  // 創建螢火蟲容器
   const fireflyContainer = document.createElement("div");
   fireflyContainer.className = "firefly-container";
   document.body.appendChild(fireflyContainer);
 
-  // 創建多個螢火蟲
   function createFireflies() {
     for (let i = 0; i < fireflyConfig.fireflyCount; i++) {
       const firefly = document.createElement("div");
@@ -24,16 +19,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // 判斷是否為夏季
   function shouldShowFirefly() {
     const today = new Date();
-    const currentMonth = today.getMonth() + 1; // getMonth() 返回 0-11
+    const currentMonth = today.getMonth() + 1;
 
-    // 檢查是否在夏季月份
     return fireflyConfig.summerMonths.includes(currentMonth);
   }
 
-  // 初始化螢火蟲效果
   function initFireflyEffect() {
     if (shouldShowFirefly()) {
       createFireflies();
@@ -45,14 +37,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // 每天檢查一次是否需要顯示螢火蟲
   initFireflyEffect();
 
-  // 每天午夜重新檢查
   setInterval(() => {
     const now = new Date();
     if (now.getHours() === 0 && now.getMinutes() === 0) {
       initFireflyEffect();
     }
-  }, 60000); // 每分鐘檢查一次
+  }, 60000);
 });
