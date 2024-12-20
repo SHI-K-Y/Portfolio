@@ -1,7 +1,7 @@
 // 雪花效果的設定選項
 const snowConfig = {
-  // 設定要顯示雪花效果的月份（11-1）
-  winterMonths: [11, 12, 1],
+  // 設定要顯示雪花效果的月份（12-1）
+  winterMonths: [12, 1],
   // 雪花的數量
   snowflakeCount: 15,
   // 雪花字符
