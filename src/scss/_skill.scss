@@ -1,4 +1,6 @@
 .skill-container {
+  z-index: 25;
+  position: relative;
   display: flex;
   width: 100%;
   gap: 20px;

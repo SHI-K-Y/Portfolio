@@ -1,4 +1,6 @@
 .home-text {
+  z-index: 25;
+  position: relative;
   padding-left: 0;
   min-height: 80vh;
   width: 50%;
@@ -51,6 +53,8 @@
 }
 
 .home-image {
+  z-index: 25;
+  position: relative;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -88,6 +92,7 @@
 }
 
 .home-box {
+  position: relative;
   display: flex;
   padding-block: 6em;
   height: 100vh;
@@ -101,6 +106,7 @@
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
+  z-index: -1000;
 
   padding-inline: 15vw;
 }

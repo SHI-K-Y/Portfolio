@@ -1,4 +1,6 @@
 .contact-container {
+  z-index: 25;
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -10,6 +12,8 @@
   }
 
   .contact-info {
+    z-index: 25;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,6 +41,8 @@
   }
 
   .form {
+    z-index: 25;
+    position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 55px 250px 1fr;

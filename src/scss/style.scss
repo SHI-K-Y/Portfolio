@@ -49,6 +49,8 @@ body {
 }
 
 .wrapper {
+  z-index: 15;
+  position: relative;
   padding-inline: 10vw;
 
   .home-box {
@@ -59,6 +61,8 @@ body {
   }
 
   .section {
+    z-index: 25;
+    position: relative;
     padding-block: 6em;
 
     .top-header {

@@ -6,7 +6,7 @@
   border-radius: 50%;
   box-shadow: 0 0 10px yellow, 0 0 20px yellow;
   animation: firefly-blink 2s infinite ease-in-out, firefly-move 10s linear infinite;
-  z-index: 9999;
+  z-index: 5;
 }
 
 @keyframes firefly-blink {
