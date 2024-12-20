@@ -141,6 +141,15 @@
   }
 
   .about-container {
+    .card {
+      .div {
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.8;
+        color: var(--text-color);
+      }
+    }
+
     .list {
       .item {
         display: flex;
