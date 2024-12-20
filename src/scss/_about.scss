@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 30px 20px 70px;
+    padding: 30px 20px 90px;
     width: 100%;
     background-color: var(--second-color);
     border-radius: 20px;
@@ -36,20 +36,27 @@
   .list {
     display: flex;
     flex-direction: column;
-    padding: 30px 20px 70px;
+    padding: 30px 20px 40px;
     width: 100%;
+    border: 3px solid var(--logo-color);
+    border-radius: 20px;
+    box-shadow: var(--first-shadow-color);
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
 
     h2 {
       text-align: center;
     }
 
     .item {
+      text-align: left;
+      font-size: 18px;
+      line-height: 1.8;
+      color: var(--text-color);
       font-size: 17px;
       padding: 10px;
-      color: var(--text-color);
       position: relative;
       display: flex;
-      justify-content: left;
+      justify-content: center;
 
       .color {
         color: var(--text-color);
@@ -61,11 +68,11 @@
         content: "";
         position: absolute;
         top: 15px;
-        left: -16px;
+        left: 50px;
         width: 15px;
         height: 15px;
         border-radius: 50px;
-        background-color: var(--second-color);
+        background-color: var(--logo-color);
         box-shadow: 1px 1px 1px 1.5px var(--first-shadow-color);
       }
     }

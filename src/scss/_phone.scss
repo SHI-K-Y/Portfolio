@@ -154,6 +154,12 @@
       .item {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+
+        &::before {
+          top: 18px;
+          left: 28px;
+        }
 
         strong {
           text-align: center;
