@@ -30,9 +30,11 @@
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
 
     div {
+      margin-top: 18px;
       text-align: left;
       font-size: 18px;
-      line-height: 1.8;
+      line-height: 1.9;
+      letter-spacing: 1.7px;
       color: var(--text-color);
     }
   }
