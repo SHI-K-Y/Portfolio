@@ -1,7 +1,7 @@
 const snowConfig = {
   winterMonths: [12, 1],
   snowflakeCount: 15,
-  snowflakes: ["❅", "❆", "❄"],
+  snowflakes: ["❅", "❄"],
 };
 
 document.addEventListener("DOMContentLoaded", function () {
