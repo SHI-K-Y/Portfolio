@@ -26,6 +26,7 @@
   line-height: 1.6;
   color: var(--text-color);
   margin-bottom: 2rem;
+  text-align: left;
 }
 
 .work-btn {
@@ -55,20 +56,4 @@
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 768px) {
-  .work-item {
-    flex-direction: column;
-    gap: 2rem;
-    text-align: center;
-  }
-
-  .work-content {
-    order: 2;
-  }
-
-  .work-image {
-    order: 1;
-  }
 }
