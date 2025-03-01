@@ -18,16 +18,21 @@
 
   .name {
     margin: 10px 0px 0px;
-    font-size: 50px;
+    font-size: 65px;
     font-weight: 600;
+    letter-spacing: 4px;
+    padding-left: 0px;
     color: var(--text-color);
+    text-shadow: 3px 3px 1px var(--first-shadow-color);
   }
 
   .subtitle {
     font-size: 20px;
+    letter-spacing: 1.5px;
     margin-top: 10px;
     margin-bottom: 30px;
     color: var(--text-color);
+    text-shadow: 3px 3px 1px var(--first-shadow-color);
   }
 
   .text-btn {
@@ -65,7 +70,7 @@
   .image {
     width: 380px;
     height: 380px;
-    margin: 0 auto;
+    margin: 0 15px;
     overflow: hidden;
     border-radius: 50%;
     box-shadow: 0 2px 10px var(--second-shadow-color);
