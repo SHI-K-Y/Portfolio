@@ -22,8 +22,11 @@
     font-weight: 600;
     letter-spacing: 4px;
     padding-left: 0px;
-    color: var(--text-color);
-    text-shadow: 3px 3px 1px var(--first-shadow-color);
+    background: linear-gradient(to right, #f6d365, #fda085, #f6d365);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: none;
   }
 
   .subtitle {
@@ -31,8 +34,11 @@
     letter-spacing: 1.5px;
     margin-top: 10px;
     margin-bottom: 30px;
-    color: var(--text-color);
-    text-shadow: 3px 3px 1px var(--first-shadow-color);
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: none;
   }
 
   .text-btn {

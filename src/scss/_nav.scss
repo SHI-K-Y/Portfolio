@@ -19,9 +19,12 @@ nav {
 
   .nav-logo {
     text-decoration: none;
-    font-size: 24px;
+    font-size: 28px; // 增大字體
     font-weight: 600;
-    color: var(--logo-color);
+    background: linear-gradient(to right, #f6d365, #fda085);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   .nav-menu-btn {
@@ -41,18 +44,22 @@ nav {
       padding-inline: 15px;
       margin-inline: 20px;
       position: relative;
+      font-size: 18px; // 增大字體
     }
 
     .active-link {
       position: relative;
-      color: var(--logo-color);
+      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
 
       &::after {
         position: absolute;
         content: "";
         width: 5px;
         height: 5px;
-        background-color: var(--logo-color);
+        background-color: #a1c4fd;
         left: 50%;
         bottom: -10px;
         border-radius: 50%;
