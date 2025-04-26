@@ -56,17 +56,25 @@
 
     input,
     textarea {
-      background: transparent;
-      border: 2px solid #aaa;
+      background-color: var(--body-color);
+      border: 2px solid transparent;
       border-radius: 12px;
       padding: 15px 20px;
       outline: none;
       color: var(--white-color);
+      position: relative;
+      background-image: linear-gradient(var(--body-color), var(--body-color)), linear-gradient(to right, #f6d365, #fda085);
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     input:focus,
     textarea:focus {
-      border-color: var(--logo-color);
+      background-image: linear-gradient(var(--body-color), var(--body-color)), linear-gradient(to right, #a1c4fd, #c2e9fb);
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
+      border: 2px solid transparent;
       box-shadow: 0 2px 5px var(--first-shadow-color);
     }
 
@@ -84,6 +92,11 @@
       background-color: var(--second-color);
       color: var(--white-color);
       transition: 0.4s;
+      border: none;
+
+      &::before {
+        content: none; /* Removing the border */
+      }
 
       &:hover {
         background-color: var(--logo-color);

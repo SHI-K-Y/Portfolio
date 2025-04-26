@@ -21,14 +21,31 @@
 
     .progress-bar-wrap {
       height: 10px;
-      border: 1px solid var(--logo-color);
+      position: relative;
       overflow: hidden;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 5px;
+        padding: 1px;
+        background: linear-gradient(to right, #f6d365, #fda085);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        pointer-events: none;
+      }
 
       .progress-bar {
         height: 10px;
-        background-color: var(--second-color);
+        background: linear-gradient(to right, #a1c4fd, #c2e9fb);
         width: 0;
         transition: width 2s ease-out;
+        border-radius: 5px;
       }
 
       &.active .progress-bar {
