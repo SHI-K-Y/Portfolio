@@ -24,6 +24,7 @@
     padding: 2px;
     background: linear-gradient(to right, #f6d365, #fda085);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     pointer-events: none;
@@ -75,7 +76,7 @@
     content: "";
     position: absolute;
     top: 0;
-    left: -100%;
+    left: -150%;
     width: 100%;
     height: 100%;
     background-color: var(--logo-color);
