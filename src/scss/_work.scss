@@ -26,8 +26,11 @@
 .work-title {
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: var(--logo-color);
-  text-shadow: 7px 5px 7px var(--first-shadow-color);
+  background: linear-gradient(to right, #f6d365, #fda085);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: none;
 }
 
 .work-description {
