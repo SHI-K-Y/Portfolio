@@ -21,6 +21,10 @@ footer {
 
       a {
         text-decoration: none;
+        background: linear-gradient(to right, #f6d365, #fda085, #f6d365);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
         color: var(--logo-color);
         font-weight: 500;
         margin-inline: 20px;
