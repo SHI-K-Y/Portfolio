@@ -75,7 +75,7 @@ body {
       h1 {
         font-weight: 600;
         margin-bottom: 10px;
-        font-size: 35px; // 增大字體
+        font-size: 35px;
         background: linear-gradient(to right, #f6d365, #fda085);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -86,7 +86,7 @@ body {
       span {
         color: rgba(153, 153, 153, 1);
         text-shadow: 6px 4px 5px var(--first-shadow-color);
-        font-size: 20px; // 增大字體
+        font-size: 20px;
       }
     }
   }
