@@ -31,7 +31,6 @@
         left: 0;
         right: 0;
         bottom: 0;
-        border-radius: 5px;
         padding: 1px;
         background: linear-gradient(to right, #f6d365, #fda085);
         -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -45,7 +44,6 @@
         background: linear-gradient(to right, #f6d365, #fda085);
         width: 0;
         transition: width 2s ease-out;
-        border-radius: 5px;
       }
 
       &.active .progress-bar {
