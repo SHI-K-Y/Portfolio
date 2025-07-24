@@ -75,11 +75,9 @@
 
   .image {
     width: 380px;
-    height: 380px;
     margin: 0 15px;
     overflow: hidden;
-    border-radius: 50%;
-    box-shadow: 0 2px 10px var(--second-shadow-color);
+    box-shadow: 0 2px 3px var(--second-shadow-color);
     position: relative;
     transition: transform 0.3s ease;
 

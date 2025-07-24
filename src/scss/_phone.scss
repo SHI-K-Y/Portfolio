@@ -61,7 +61,7 @@
   }
 
   .home-box {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("./assets/image/background-phone.jpg");
+    // background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("./assets/image/background-phone.jpg");
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -135,8 +135,14 @@
       margin-top: 0px;
 
       .image {
-        width: 280px;
-        height: 280px;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 350px;
+          object-fit: cover;
+          object-position: center top;
+        }
       }
     }
   }
