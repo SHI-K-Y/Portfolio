@@ -159,6 +159,8 @@
 
   .about-container {
     .card {
+      height: 400px;
+
       .div {
         text-align: center;
         font-size: 16px;
@@ -168,6 +170,8 @@
     }
 
     .list {
+      height: 400px;
+
       .item {
         flex-direction: column;
         justify-content: center;
@@ -258,7 +262,7 @@
     padding-inline: 5vw;
 
     .section {
-      padding-block: 3em;
+      padding-block: 2em;
 
       .top-header {
         margin-bottom: 2em;
