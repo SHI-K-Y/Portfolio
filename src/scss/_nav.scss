@@ -22,17 +22,26 @@ nav {
     text-decoration: none;
     font-size: 28px;
     font-weight: 600;
-    background: linear-gradient(to right, #f6d365, #fda085);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--logo-color);
     position: absolute;
     left: 9vw;
   }
 
   .nav-menu-btn {
     display: none;
-    color: var(--logo-color);
+    color: var(--first-color);
+    position: absolute;
+    right: 9vw;
+    flex-direction: column;
+    cursor: pointer;
+
+    span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 3px 0;
+      transition: 0.3s;
+    }
   }
 
   ul {
@@ -44,7 +53,7 @@ nav {
 
     .nav-link {
       text-decoration: none;
-      color: var(--text-color);
+      color: var(--logo-color);
       letter-spacing: 3px;
       font-weight: 500;
       padding-inline: 15px;
@@ -55,17 +64,14 @@ nav {
 
     .active-link {
       position: relative;
-      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      color: var(--first-color);
 
       &::after {
         position: absolute;
         content: "";
         width: 5px;
         height: 5px;
-        background-color: #a1c4fd;
+        background-color: var(--first-color);
         left: 50%;
         bottom: -10px;
         border-radius: 50%;

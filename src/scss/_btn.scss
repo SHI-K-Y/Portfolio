@@ -18,7 +18,7 @@
     bottom: 0;
     border-radius: 10px;
     padding: 2px;
-    background: linear-gradient(to right, #f6d365, #fda085);
+    background: var(--first-color);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
@@ -31,7 +31,7 @@
     transform: scale(1.01);
 
     &::before {
-      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+      background: var(--first-color-hover);
     }
   }
 
@@ -59,7 +59,7 @@
     bottom: 0;
     border-radius: 10px;
     padding: 2px;
-    background: linear-gradient(to right, #f6d365, #fda085);
+    background: var(--first-color);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
@@ -72,7 +72,7 @@
     transform: scale(1.01);
 
     &::before {
-      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+      background: var(--first-color-hover);
     }
   }
 

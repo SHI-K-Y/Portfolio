@@ -32,7 +32,7 @@
         right: 0;
         bottom: 0;
         padding: 1px;
-        background: linear-gradient(to right, #f6d365, #fda085);
+        background: var(--first-color);
         -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
         -webkit-mask-composite: xor;
         mask-composite: exclude;
@@ -41,7 +41,7 @@
 
       .progress-bar {
         height: 10px;
-        background: linear-gradient(to right, #f6d365, #fda085);
+        background: var(--first-color);
         width: 0;
         transition: width 2s ease-out;
       }

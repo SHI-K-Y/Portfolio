@@ -9,22 +9,18 @@
 @import "./phone";
 
 :root {
-  --body-color: rgba(27, 50, 71, 1);
-  --logo-color: rgb(202, 186, 145);
+  --body-color: rgba(0, 0, 0, 1);
+  --logo-color: rgb(255, 255, 255);
 
   --white-color: rgb(255, 255, 255, 1);
   --black-color: rgba(0, 0, 0, 1);
-  --text-color: rgba(233, 234, 236, 1);
+  // --text-color: rgb(70, 130, 180);
 
-  --first-color: rgba(144, 173, 198, 1);
-  --first-color-hover: rgba(156, 42, 39, 1);
+  --first-color: rgb(135, 206, 235);
   --first-shadow-color: rgba(0, 0, 0, 0.8);
 
-  --second-color: rgb(68, 101, 123);
-  --second-color-hover: rgb(30, 136, 229, 1);
+  --second-color: rgb(45, 48, 49);
   --second-shadow-color: rgba(0, 0, 0, 0.5);
-
-  --third-color: rgba(178, 97, 45, 1);
 }
 
 h1 {
@@ -76,11 +72,8 @@ body {
         font-weight: 600;
         margin-bottom: 10px;
         font-size: 35px;
-        background: linear-gradient(to right, #f6d365, #fda085);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-shadow: none;
+        color: var(--logo-color);
+        text-shadow: 7px 5px 7px var(--first-shadow-color);
       }
 
       span {
