@@ -67,9 +67,10 @@
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     height: auto;
     padding-inline: 5vw;
+    padding-top: 100px;
     min-height: 100vh;
     margin-bottom: 0;
 
@@ -142,7 +143,7 @@
       justify-content: center;
       width: 100%;
       margin-bottom: 0;
-      margin-top: 0px;
+      margin-top: 20px;
 
       .image {
         overflow: hidden;
