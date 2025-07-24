@@ -2,40 +2,123 @@ footer {
   z-index: 25;
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  row-gap: 30px;
   padding-block: 40px 60px;
+  background-color: var(--second-color);
 
   .top-footer {
     font-size: 25px;
     font-weight: 600;
   }
 
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+    gap: 120px;
+  }
+
+  .footer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-weight: 600;
+    color: var(--white-color);
+    height: auto;
+    text-align: center;
+  }
+
   .footer-menu {
     display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
 
     .menu-item {
       list-style: none;
 
       a {
+        font-size: 18px;
         text-decoration: none;
-        color: var(--first-color);
+        color: var(--footer-text-color);
         font-weight: 500;
-        margin-inline: 20px;
+        padding: 8px 0;
+        display: block;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: var(--first-color);
+        }
       }
     }
   }
 
   .footer-icons {
     display: flex;
+    flex-direction: column;
     gap: 30px;
+
+    .icon {
+      color: var(--footer-text-color);
+      cursor: pointer;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      width: 140px;
+      height: 50px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 12px 16px;
+      font-weight: 500;
+      background: none;
+
+      i {
+        font-size: 20px;
+        margin-right: 2px;
+      }
+
+      .icon-name {
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.3);
+
+        &#instagram-icon {
+          background: linear-gradient(
+            45deg,
+            rgba(240, 148, 51, 0.35) 0%,
+            rgba(230, 104, 60, 0.35) 25%,
+            rgba(220, 39, 67, 0.35) 50%,
+            rgba(204, 35, 102, 0.35) 75%,
+            rgba(188, 24, 136, 0.35) 100%
+          );
+          color: #e1306c;
+        }
+        &#facebook-icon {
+          background-color: rgba(24, 119, 242, 0.35);
+          color: #1877f2;
+        }
+
+        &#github-icon {
+          background-color: rgba(51, 51, 51, 0.5);
+          color: var(--white-color);
+        }
+      }
+    }
   }
 
   .bottom-footer {
+    text-align: center;
     font-size: 14px;
-    color: var(--first-color);
-    margin-top: 10px;
+    color: var(--footer-text-color);
+    padding-top: 20px;
+    border-top: 1px solid var(--third-color);
+    width: 100%;
   }
 }
