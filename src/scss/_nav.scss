@@ -6,7 +6,8 @@ nav {
   line-height: 60px;
   padding-inline: 9vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   z-index: 1000;
   transition: transform 0.5s ease, background-color 1s ease;
 
@@ -25,6 +26,8 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    position: absolute;
+    left: 9vw;
   }
 
   .nav-menu-btn {
@@ -34,7 +37,10 @@ nav {
 
   ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
+    gap: 40px;
 
     .nav-link {
       text-decoration: none;
@@ -42,9 +48,9 @@ nav {
       letter-spacing: 3px;
       font-weight: 500;
       padding-inline: 15px;
-      margin-inline: 20px;
       position: relative;
       font-size: 18px;
+      text-align: center;
     }
 
     .active-link {
