@@ -136,6 +136,30 @@ class I18n {
 
     const skillSubtitle = document.querySelector("#skill .top-header span");
     if (skillSubtitle) skillSubtitle.textContent = lang.skill.subtitle;
+
+    const introvertedEl = document.querySelector(".trait-introverted");
+    if (introvertedEl) introvertedEl.textContent = lang.skill.traits.introverted;
+
+    const intuitiveEl = document.querySelector(".trait-intuitive");
+    if (intuitiveEl) intuitiveEl.textContent = lang.skill.traits.intuitive;
+
+    const feelingEl = document.querySelector(".trait-feeling");
+    if (feelingEl) feelingEl.textContent = lang.skill.traits.feeling;
+
+    const judgingEl = document.querySelector(".trait-judging");
+    if (judgingEl) judgingEl.textContent = lang.skill.traits.judging;
+
+    const percentIntrovertedEl = document.querySelector(".percent-introverted");
+    if (percentIntrovertedEl) percentIntrovertedEl.textContent = lang.skill.percentages.introverted;
+
+    const percentIntuitiveEl = document.querySelector(".percent-intuitive");
+    if (percentIntuitiveEl) percentIntuitiveEl.textContent = lang.skill.percentages.intuitive;
+
+    const percentFeelingEl = document.querySelector(".percent-feeling");
+    if (percentFeelingEl) percentFeelingEl.textContent = lang.skill.percentages.feeling;
+
+    const percentJudgingEl = document.querySelector(".percent-judging");
+    if (percentJudgingEl) percentJudgingEl.textContent = lang.skill.percentages.judging;
   }
 
   updateWork(lang) {
@@ -175,9 +199,14 @@ class I18n {
     const infoTitle = document.querySelector("#contact .contact-info h2");
     if (infoTitle) infoTitle.textContent = lang.contact.info_title;
 
-    // Update phone number
     const phoneElement = document.querySelector("#contact .contact-info .phone-text");
     if (phoneElement) phoneElement.textContent = lang.contact.phone;
+
+    const instagramElement = document.querySelector("#contact .contact-info .instagram-text");
+    if (instagramElement) instagramElement.textContent = lang.contact.instagram;
+
+    const emailElement = document.querySelector("#contact .contact-info .email-text");
+    if (emailElement) emailElement.textContent = lang.contact.email;
 
     const nameInput = document.querySelector('#contact input[name="name"]');
     if (nameInput) nameInput.placeholder = lang.contact.form.name;

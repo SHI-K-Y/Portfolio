@@ -34,6 +34,18 @@ const languages = {
     skill: {
       title: "人格特質",
       subtitle: "了解我的個人特質",
+      traits: {
+        introverted: "內向型",
+        intuitive: "直覺型",
+        feeling: "情感型",
+        judging: "判斷型",
+      },
+      percentages: {
+        introverted: "75%",
+        intuitive: "65%",
+        feeling: "70%",
+        judging: "80%",
+      },
     },
     work: {
       title: "作品集",
@@ -54,6 +66,8 @@ const languages = {
       subtitle: "如果您想找我，歡迎隨時透過下方資訊聯繫我",
       info_title: "聯絡資訊",
       phone: "Tel: 0908698596",
+      instagram: "Instagram: k.y.shi_",
+      email: "Email: 13131103@me.mcu.edu.tw",
       form: {
         name: "姓名",
         email: "信箱",
@@ -102,6 +116,18 @@ const languages = {
     skill: {
       title: "Personality Traits",
       subtitle: "Understanding my character",
+      traits: {
+        introverted: "Introverted",
+        intuitive: "Intuitive",
+        feeling: "Feeling",
+        judging: "Judging",
+      },
+      percentages: {
+        introverted: "75%",
+        intuitive: "65%",
+        feeling: "70%",
+        judging: "80%",
+      },
     },
     work: {
       title: "Portfolio",
@@ -124,6 +150,8 @@ const languages = {
       subtitle: "If you'd like to reach me, please feel free to contact me through the information below",
       info_title: "Contact Information",
       phone: "Tel: +886 908698596",
+      instagram: "Instagram: k.y.shi_",
+      email: "Email: 13131103@me.mcu.edu.tw",
       form: {
         name: "Name",
         email: "Email",
