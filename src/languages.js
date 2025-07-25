@@ -92,12 +92,12 @@ const languages = {
       intro_text:
         "Hello everyone! I'm Eric Shi, welcome to my personal website! I'm currently a freshman majoring in Information Management at Ming Chuan University. This website introduces some information about me and my portfolio. If you want to contact me, you can fill out the contact form below or reach me through the contact information!",
       profile_title: "My Profile",
-      birth_year: "Birth Year: 2005",
-      birth_year_value: "",
-      hometown: "Hometown: Taichung, Taiwan",
-      hometown_value: "",
-      school: "Current School: MCU IM",
-      school_value: "",
+      birth_year: "Birth Year:",
+      birth_year_value: "2005",
+      hometown: "Hometown:",
+      hometown_value: "Taichung, Taiwan",
+      school: "Current School:",
+      school_value: "MCU IM",
     },
     skill: {
       title: "Personality Traits",
