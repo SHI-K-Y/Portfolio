@@ -175,6 +175,10 @@ class I18n {
     const infoTitle = document.querySelector("#contact .contact-info h2");
     if (infoTitle) infoTitle.textContent = lang.contact.info_title;
 
+    // Update phone number
+    const phoneElement = document.querySelector("#contact .contact-info .phone-text");
+    if (phoneElement) phoneElement.textContent = lang.contact.phone;
+
     const nameInput = document.querySelector('#contact input[name="name"]');
     if (nameInput) nameInput.placeholder = lang.contact.form.name;
 

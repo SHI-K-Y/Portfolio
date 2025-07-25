@@ -53,6 +53,7 @@ const languages = {
       title: "聯絡我",
       subtitle: "Contact Me",
       info_title: "聯絡資訊",
+      phone: "Tel: 0908698596",
       form: {
         name: "姓名",
         email: "信箱",
@@ -122,6 +123,7 @@ const languages = {
       title: "Contact Me",
       subtitle: "Contact Me",
       info_title: "Contact Information",
+      phone: "Tel: +886 908698596",
       form: {
         name: "Name",
         email: "Email",
