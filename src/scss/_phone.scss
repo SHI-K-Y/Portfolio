@@ -170,7 +170,7 @@
 
   .about-container {
     .card {
-      height: 400px;
+      height: 420px;
 
       .div {
         text-align: center;
@@ -182,6 +182,12 @@
 
     .list {
       height: 400px;
+      padding-top: 20px;
+
+      h2 {
+        margin-bottom: 15px;
+        text-align: center;
+      }
 
       .item {
         flex-direction: column;
@@ -220,6 +226,30 @@
 
     .list {
       padding-inline: 30px;
+    }
+  }
+
+  html[lang="en"] {
+    .about-container {
+      .card {
+        height: 600px;
+      }
+
+      .list {
+        margin-top: 20px;
+        height: 370px;
+        justify-content: flex-start;
+        padding-top: 20px;
+
+        h2 {
+          margin-bottom: 15px;
+          text-align: center;
+        }
+
+        .item {
+          margin-top: 10px;
+        }
+      }
     }
   }
 

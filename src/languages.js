@@ -95,8 +95,8 @@ const languages = {
       birth_year_value: "2005",
       hometown: "Hometown: ",
       hometown_value: "Taichung, Taiwan",
-      school: "Current School: ",
-      school_value: "Ming Chuan University, Information Management",
+      school: "Current School:",
+      school_value: "MCU IM",
     },
     skill: {
       title: "Personality Traits",
