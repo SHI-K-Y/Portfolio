@@ -4,6 +4,15 @@
       display: none;
     }
 
+    .language-toggle {
+      right: 60px;
+
+      .lang-btn {
+        padding: 4px 8px;
+        font-size: 12px;
+      }
+    }
+
     .nav-menu-btn {
       display: flex;
       justify-content: center;

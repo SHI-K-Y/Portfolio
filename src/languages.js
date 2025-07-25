@@ -1,0 +1,138 @@
+const languages = {
+  zh: {
+    nav: {
+      home: "首頁",
+      about: "關於我",
+      skill: "人格特質",
+      work: "作品集",
+      contact: "聯絡我",
+    },
+    home: {
+      greeting: "Hi,",
+      name: "施坤諺 Eric",
+      subtitle: "Welcome to my personal website.",
+      icons: {
+        instagram: "Instagram",
+        facebook: "Facebook",
+        github: "GitHub",
+      },
+    },
+    about: {
+      title: "關於我",
+      subtitle: "About Me",
+      intro_title: "自我介紹",
+      intro_text:
+        "大家好 ! 我是施坤諺，歡迎來到我的個人網站 ! 我目前就讀於銘傳大學 資訊管理學系 一年級，此網站介紹了一些關於我的資訊和我的作品集，如果想和我聯絡，可以在下方的聯絡表單填寫訊息，或是透過聯絡資訊與我聯繫！",
+      profile_title: "我的小檔案",
+      birth_year: "出生年: ",
+      birth_year_value: "2005",
+      hometown: "家鄉: ",
+      hometown_value: "臺灣臺中市",
+      school: "目前就讀學校: ",
+      school_value: "銘傳大學 資訊管理學系",
+    },
+    skill: {
+      title: "人格特質",
+      subtitle: "Personality Traits",
+    },
+    work: {
+      title: "作品集",
+      subtitle: "Portfolio",
+      project1: {
+        title: "自寫 Excel 記帳簿",
+        description: "這是我自寫的 Excel 記帳簿，如欲使用可以在下方的聯絡表單與我聯絡！",
+        button: "前往記帳簿瀏覽",
+      },
+      project2: {
+        title: "MCU 餐廳選擇器",
+        description: "你是否會有想破頭還是不知道下一餐要吃什麼，或者是有選擇障礙的問題 ? 那就到 MCU 餐廳選擇器來解決你的困擾吧 !",
+        button: "前往網站",
+      },
+    },
+    contact: {
+      title: "聯絡我",
+      subtitle: "Contact Me",
+      info_title: "聯絡資訊",
+      form: {
+        name: "姓名",
+        email: "信箱",
+        message: "留下您想對我說的話吧！",
+        send: "Send",
+      },
+    },
+    footer: {
+      menu: "MENU",
+      links: "Links",
+      copyright: "Copyright © 2025 Kunyan Shi.",
+    },
+  },
+  en: {
+    nav: {
+      home: "Home",
+      about: "About",
+      skill: "Personality",
+      work: "Portfolio",
+      contact: "Contact",
+    },
+    home: {
+      greeting: "Hi,",
+      name: "Eric Shi",
+      subtitle: "Welcome to my personal website.",
+      icons: {
+        instagram: "Instagram",
+        facebook: "Facebook",
+        github: "GitHub",
+      },
+    },
+    about: {
+      title: "About Me",
+      subtitle: "About Me",
+      intro_title: "Introduction",
+      intro_text:
+        "Hello everyone! I'm Eric Shi, welcome to my personal website! I'm currently a freshman majoring in Information Management at Ming Chuan University. This website introduces some information about me and my portfolio. If you want to contact me, you can fill out the contact form below or reach me through the contact information!",
+      profile_title: "My Profile",
+      birth_year: "Birth Year: ",
+      birth_year_value: "2005",
+      hometown: "Hometown: ",
+      hometown_value: "Taichung, Taiwan",
+      school: "Current School: ",
+      school_value: "Ming Chuan University, Information Management",
+    },
+    skill: {
+      title: "Personality Traits",
+      subtitle: "Personality Traits",
+    },
+    work: {
+      title: "Portfolio",
+      subtitle: "Portfolio",
+      project1: {
+        title: "Custom Excel Expense Tracker",
+        description:
+          "This is my custom-made Excel expense tracker. If you'd like to use it, please contact me through the contact form below!",
+        button: "View Expense Tracker",
+      },
+      project2: {
+        title: "MCU Restaurant Selector",
+        description:
+          "Do you ever struggle to decide what to eat for your next meal or have decision-making difficulties? Come to the MCU Restaurant Selector to solve your troubles!",
+        button: "Visit Website",
+      },
+    },
+    contact: {
+      title: "Contact Me",
+      subtitle: "Contact Me",
+      info_title: "Contact Information",
+      form: {
+        name: "Name",
+        email: "Email",
+        message: "Leave me a message!",
+        send: "Send",
+      },
+    },
+    footer: {
+      menu: "MENU",
+      links: "Links",
+      copyright: "Copyright © 2025 Kunyan Shi.",
+    },
+  },
+};

@@ -44,6 +44,37 @@ nav {
     }
   }
 
+  .language-toggle {
+    position: absolute;
+    right: 150px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 5px;
+
+    .lang-btn {
+      padding: 5px 12px;
+      border: 1px solid var(--first-color);
+      background: transparent;
+      color: var(--logo-color);
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 14px;
+      font-weight: 500;
+
+      &.active {
+        background: var(--first-color);
+        color: var(--black-color);
+      }
+
+      &:hover {
+        background: var(--first-color);
+        color: var(--black-color);
+      }
+    }
+  }
+
   ul {
     display: flex;
     justify-content: center;
