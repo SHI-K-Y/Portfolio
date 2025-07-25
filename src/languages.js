@@ -19,7 +19,7 @@ const languages = {
     },
     about: {
       title: "關於我",
-      subtitle: "About Me",
+      subtitle: "我是誰，我在做什麼",
       intro_title: "自我介紹",
       intro_text:
         "大家好 ! 我是施坤諺，歡迎來到我的個人網站 ! 我目前就讀於銘傳大學 資訊管理學系 一年級，此網站介紹了一些關於我的資訊和我的作品集，如果想和我聯絡，可以在下方的聯絡表單填寫訊息，或是透過聯絡資訊與我聯繫！",
@@ -33,11 +33,11 @@ const languages = {
     },
     skill: {
       title: "人格特質",
-      subtitle: "Personality Traits",
+      subtitle: "了解我的個人特質",
     },
     work: {
       title: "作品集",
-      subtitle: "Portfolio",
+      subtitle: "關於我所創作的作品",
       project1: {
         title: "自寫 Excel 記帳簿",
         description: "這是我自寫的 Excel 記帳簿，如欲使用可以在下方的聯絡表單與我聯絡！",
@@ -51,7 +51,7 @@ const languages = {
     },
     contact: {
       title: "聯絡我",
-      subtitle: "Contact Me",
+      subtitle: "如果您想找我，歡迎隨時透過下方資訊聯繫我",
       info_title: "聯絡資訊",
       phone: "Tel: 0908698596",
       form: {
@@ -87,7 +87,7 @@ const languages = {
     },
     about: {
       title: "About Me",
-      subtitle: "About Me",
+      subtitle: "Who I am and what I do",
       intro_title: "Introduction",
       intro_text:
         "Hello everyone! I'm Eric Shi, welcome to my personal website! I'm currently a freshman majoring in Information Management at Ming Chuan University. This website introduces some information about me and my portfolio. If you want to contact me, you can fill out the contact form below or reach me through the contact information!",
@@ -101,11 +101,11 @@ const languages = {
     },
     skill: {
       title: "Personality Traits",
-      subtitle: "Personality Traits",
+      subtitle: "Understanding my character",
     },
     work: {
       title: "Portfolio",
-      subtitle: "Portfolio",
+      subtitle: "About the works I've created",
       project1: {
         title: "Custom Excel Expense Tracker",
         description:
@@ -121,7 +121,7 @@ const languages = {
     },
     contact: {
       title: "Contact Me",
-      subtitle: "Contact Me",
+      subtitle: "If you'd like to reach me, please feel free to contact me through the information below",
       info_title: "Contact Information",
       phone: "Tel: +886 908698596",
       form: {
