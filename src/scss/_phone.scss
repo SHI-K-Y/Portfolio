@@ -248,6 +248,10 @@
 
         .item {
           margin-top: 10px;
+
+          &::before {
+            left: 10px;
+          }
         }
       }
     }
