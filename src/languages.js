@@ -58,7 +58,7 @@ const languages = {
         name: "姓名",
         email: "信箱",
         message: "留下您想對我說的話吧！",
-        send: "Send",
+        send: "傳送",
       },
     },
     footer: {
