@@ -10,7 +10,7 @@ const languages = {
     home: {
       greeting: "Hi,",
       name: "施坤諺 Eric",
-      subtitle: "Welcome to my personal website.",
+      subtitle: "歡迎來到我的個人網頁！",
       icons: {
         instagram: "Instagram",
         facebook: "Facebook",
