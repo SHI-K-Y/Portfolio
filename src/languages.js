@@ -22,7 +22,7 @@ const languages = {
       subtitle: "我是誰，我在做什麼",
       intro_title: "自我介紹",
       intro_text:
-        "大家好 ! 我是施坤諺，歡迎來到我的個人網站 ! 我目前就讀於銘傳大學 資訊管理學系 一年級，此網站介紹了一些關於我的資訊和我的作品集，如果想和我聯絡，可以在下方的聯絡表單填寫訊息，或是透過聯絡資訊與我聯繫！",
+        "大家好 ! 我是施坤諺，歡迎來到我的個人網站 ! 我目前就讀於銘傳大學 資訊管理學系 二年級，此網站介紹了一些關於我的資訊和我的作品集，如果想和我聯絡，可以在下方的聯絡表單填寫訊息，或是透過聯絡資訊與我聯繫！",
       profile_title: "我的小檔案",
       birth_year: "出生年: ",
       birth_year_value: "2005",
@@ -104,7 +104,7 @@ const languages = {
       subtitle: "Who I am and what I do",
       intro_title: "Introduction",
       intro_text:
-        "Hello everyone! I'm Eric Shi, welcome to my personal website! I'm currently a freshman majoring in Information Management at Ming Chuan University. This website introduces some information about me and my portfolio. If you want to contact me, you can fill out the contact form below or reach me through the contact information!",
+        "Hello everyone! I'm Eric Shi, welcome to my personal website! I'm currently a sophomore majoring in Information Management at Ming Chuan University. This website introduces some information about me and my portfolio. If you want to contact me, you can fill out the contact form below or reach me through the contact information!",
       profile_title: "My Profile",
       birth_year: "Birth Year:",
       birth_year_value: "2005",
