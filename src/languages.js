@@ -36,15 +36,15 @@ const languages = {
       subtitle: "了解我的個人特質",
       traits: {
         introverted: "內向型",
-        intuitive: "直覺型",
+        intuitive: "實感型",
         feeling: "情感型",
         judging: "判斷型",
       },
       percentages: {
-        introverted: "75%",
-        intuitive: "65%",
-        feeling: "70%",
-        judging: "80%",
+        introverted: "53%",
+        intuitive: "56%",
+        feeling: "51%",
+        judging: "51%",
       },
     },
     work: {
@@ -118,15 +118,15 @@ const languages = {
       subtitle: "Understanding my character",
       traits: {
         introverted: "Introverted",
-        intuitive: "Intuitive",
+        intuitive: "Observant",
         feeling: "Feeling",
         judging: "Judging",
       },
       percentages: {
-        introverted: "75%",
-        intuitive: "65%",
-        feeling: "70%",
-        judging: "80%",
+        introverted: "53%",
+        intuitive: "56%",
+        feeling: "51%",
+        judging: "51%",
       },
     },
     work: {
