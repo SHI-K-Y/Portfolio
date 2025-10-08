@@ -118,7 +118,26 @@ class I18n {
     const profileItems = document.querySelectorAll("#about .education .item");
     if (profileItems[0]) {
       profileItems[0].querySelector("strong").textContent = lang.about.hometown;
-      profileItems[0].querySelector(".color:last-child").textContent = lang.about.hometown_value;
+      const hometownValueEl = profileItems[0].querySelector(".color:last-child");
+      if (hometownValueEl) {
+        hometownValueEl.innerHTML = "";
+
+        const textNode = document.createTextNode(lang.about.hometown_value);
+        hometownValueEl.appendChild(textNode);
+
+        const flagImg = document.createElement("img");
+        flagImg.src = "./assets/image/taiwan.png";
+        flagImg.alt = "臺灣國旗";
+        flagImg.className = "taiwan-flag";
+        flagImg.style.cssText = `
+          height: 1em;
+          width: auto;
+          margin-left: 0.3em;
+          vertical-align: middle;
+          display: inline-block;
+        `;
+        hometownValueEl.appendChild(flagImg);
+      }
     }
     if (profileItems[1]) {
       profileItems[1].querySelector("strong").textContent = lang.about.birth_year;
