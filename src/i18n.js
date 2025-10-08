@@ -117,12 +117,12 @@ class I18n {
 
     const profileItems = document.querySelectorAll("#about .education .item");
     if (profileItems[0]) {
-      profileItems[0].querySelector("strong").textContent = lang.about.birth_year;
-      profileItems[0].querySelector(".color:last-child").textContent = lang.about.birth_year_value;
+      profileItems[0].querySelector("strong").textContent = lang.about.hometown;
+      profileItems[0].querySelector(".color:last-child").textContent = lang.about.hometown_value;
     }
     if (profileItems[1]) {
-      profileItems[1].querySelector("strong").textContent = lang.about.hometown;
-      profileItems[1].querySelector(".color:last-child").textContent = lang.about.hometown_value;
+      profileItems[1].querySelector("strong").textContent = lang.about.birth_year;
+      profileItems[1].querySelector(".color:last-child").textContent = lang.about.birth_year_value;
     }
     if (profileItems[2]) {
       profileItems[2].querySelector("strong").textContent = lang.about.school;
