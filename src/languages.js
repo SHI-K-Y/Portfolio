@@ -65,7 +65,7 @@ const languages = {
       title: "聯絡我",
       subtitle: "如果您想找我，歡迎隨時透過下方資訊聯繫我",
       info_title: "聯絡資訊",
-      phone: "Tel: 0908698596",
+      phone: "電話: 0908698596",
       instagram: "Instagram: k.y.shi_",
       email: "Email: 13131103@me.mcu.edu.tw",
       timezone: "時區: UTC+8",
