@@ -227,6 +227,9 @@ class I18n {
     const emailElement = document.querySelector("#contact .contact-info .email-text");
     if (emailElement) emailElement.textContent = lang.contact.email;
 
+    const timezoneElement = document.querySelector("#contact .contact-info .timezone-text");
+    if (timezoneElement) timezoneElement.textContent = lang.contact.timezone;
+
     const nameInput = document.querySelector('#contact input[name="name"]');
     if (nameInput) nameInput.placeholder = lang.contact.form.name;
 

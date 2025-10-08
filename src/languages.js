@@ -68,6 +68,7 @@ const languages = {
       phone: "Tel: 0908698596",
       instagram: "Instagram: k.y.shi_",
       email: "Email: 13131103@me.mcu.edu.tw",
+      timezone: "時區: UTC+8",
       form: {
         name: "姓名",
         email: "信箱",
@@ -152,6 +153,7 @@ const languages = {
       phone: "Tel: +886 908698596",
       instagram: "Instagram: k.y.shi_",
       email: "Email: 13131103@me.mcu.edu.tw",
+      timezone: "Timezone: UTC+8",
       form: {
         name: "Name",
         email: "Email",
