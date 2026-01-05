@@ -79,7 +79,7 @@ const languages = {
     footer: {
       menu: "MENU",
       links: "Links",
-      copyright: "Copyright © 2025 Kunyan Shi.",
+      copyright: "Copyright © 2026 Kunyan Shi.",
     },
   },
   en: {
@@ -164,7 +164,7 @@ const languages = {
     footer: {
       menu: "MENU",
       links: "Links",
-      copyright: "Copyright © 2025 Kunyan Shi.",
+      copyright: "Copyright © 2026 Kunyan Shi.",
     },
   },
 };
